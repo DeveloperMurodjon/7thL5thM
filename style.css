@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  background-color: #0d0714;
+}
+#container {
+  margin: 0 auto;
+  margin-top: 59px;
+  width: 432px;
+}
+
+#toDoForm {
+  margin-bottom: 95px;
+  display: flex;
+  gap: 11px;
+}
+
+label {
+  display: flex;
+  flex: 1;
+}
+
+#editTask {
+  width: 100%;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 11px 15px;
+  background-color: #0d0714;
+  border: 1px solid #3e1671;
+  color: white;
+}
+
+#editTask::placeholder {
+  color: #777777;
+  font-size: 16px;
+}
+
+#add {
+  border-radius: 10px;
+  padding: 9px;
+  border: none;
+  background-color: #9e78cf;
+  cursor: pointer;
+}
+
+#add img {
+  width: 20px;
+  height: 20px;
+}
+
+#taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.taskCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #15101c;
+  border-radius: 10px;
+  padding: 22px 20px;
+  color: white;
+}
+
+.taskText {
+  flex: 1;
+  font-size: 16px;
+  color: #9e78cf;
+}
+
+.btn-delete {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-delete img {
+  width: 20px;
+  height: 20px;
+}
