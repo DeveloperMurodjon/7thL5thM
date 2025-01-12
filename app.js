@@ -11,6 +11,7 @@ function validate(taskValue) {
 
 function createCard(task) {
   return `<div class="taskCard">
+        <input type="checkbox" class="check" />
             <div class="taskText">${task.taskValue}</div>
             <button data-id="${task.id}" class="btn-delete">
               <img src="./images/delete-btn.png" alt="delete button" />
@@ -54,6 +55,15 @@ wrapper.addEventListener("click", function (event) {
     }
     tasks = tasks.filter((task) => task.id != taskId);
     localStorage.setItem("task", JSON.stringify(tasks));
+  }
+});
+
+wrapper.addEventListener("click", function (event) {
+  if (event.target.classList.contains("check")) {
+    const taskText = event.target.nextElementSibling;
+    taskText.style.textDecoration = event.target.checked
+      ? "line-through"
+      : "none";
   }
 });
 

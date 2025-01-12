@@ -87,6 +87,7 @@ label {
 }
 
 .taskText {
+  padding-left: 10px;
   flex: 1;
   font-size: 16px;
   color: #9e78cf;
@@ -101,4 +102,14 @@ label {
 .btn-delete img {
   width: 20px;
   height: 20px;
+}
+.check {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #9e78cf;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
 }
